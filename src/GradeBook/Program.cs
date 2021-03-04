@@ -42,7 +42,54 @@ namespace GradeBook
             **/
 
 
+            /**conditional operator 
+            int num = 2;
+            string result = (num % 2 == 0) ? "Even" : "Odd";
+            Console.WriteLine("{0} is {1}", num, result);
+
+            **/
+
+             /**Null Coalescing operator 
+             string name = null;
+
+             string username = name ?? "user";
+
+            **/
+
+            /**
+            bool isFound = false;
+            int value = 0;
+
+            while(isFound != true)
+            {
+                if(value == 25)
+                {
+                    isFound = true;
+                }
+                value = value + 5;
+            }
+
+            **/
+
+
+            /** for loop
+            for(int count =1; count <= 5; count++)
+            {
+                Console.WriteLine("hello...");
+            }
             
+            **/
+
+            int[] array = {1,2,3,4,5};
+
+            foreach (int item in array)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            
+
         }
     }
 }
