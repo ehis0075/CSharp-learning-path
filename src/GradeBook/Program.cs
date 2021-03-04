@@ -80,12 +80,60 @@ namespace GradeBook
             
             **/
 
-            int[] array = {1,2,3,4,5};
+            /** goto
+            char chair = 't';
 
-            foreach (int item in array)
+            switch(chair)
             {
-                Console.WriteLine(item);
+                case 'a':
+                    {
+                        Console.WriteLine("chair is a vowel.");
+                        break;
+                    }
+                case 'e':
+                    {
+                        goto case 'a';
+                    }    
+                case 'i':
+                    {
+                        goto case 'a';
+                    }    
+                case 'o':
+                    {
+                        goto case 'a';
+                    }    
+                case 'u':
+                    {
+                        goto case 'a';
+                    }
+                case 'y':
+                    {
+                        Console.WriteLine("Chair is sometimes a vowel.");
+                        break;
+                    }        
+                default:
+                    {
+                        Console.WriteLine("chair is a consonant");
+                        break;
+                    }    
             }
+
+            **/
+
+            int[] num = new int[] {1,2,3,4,5,6,7,8,9,10};
+
+            for(int i = 0; i < 10; i++)
+            {
+                if(num[i] == 8)
+                {
+                    goto Control;
+                }
+            }
+
+            Console.WriteLine("end of loop");
+
+            Control:
+            Console.WriteLine("the number is 8");
 
 
             
