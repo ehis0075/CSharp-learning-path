@@ -2,6 +2,21 @@
 
 namespace GradeBook
 {
+
+    // static void PassByRef(ref int i)
+    // {
+    //    i = i + 1; 
+    // }
+
+            // enum
+            enum Status 
+            {
+                Alive, 
+                Injured,
+                Dead
+            }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -118,9 +133,9 @@ namespace GradeBook
                     }    
             }
 
-            **/
+            
 
-            int[] num = new int[] {1,2,3,4,5,6,7,8,9,10};
+           int[] num = new int[] {1,2,3,4,5,6,7,8,9,10};
 
             for(int i = 0; i < 10; i++)
             {
@@ -136,7 +151,52 @@ namespace GradeBook
             Console.WriteLine("the number is 8");
 
 
+           
+
+            int sum(int a, int b = 2)
+            {
+                int add = a + b;
+                return add;
+            }
+
+            Console.WriteLine("the sum of a and b is {0}", sum(2,5));
+
+             ***/
+
+
+            // int Sum(params int[] args)
+            // {
+            //     int add = 0;
+
+            //     foreach (int item in args)
+            //     {
+            //         add = add + item;
+            //     }
+
+            //     return add;
+            // }
+
+            // TYPES IN C#
+
+            Status player = Status.Alive;
             
+            //enum
+            switch(player)
+            {
+                case Status.Alive:
+                    Console.WriteLine("i am alive");
+                    break;
+
+                case Status.Injured:
+                    Console.WriteLine("i am injured");
+                    break;
+                case Status.Dead:
+                    Console.WriteLine("i am dead");
+                    break;            
+            }
+
+            int valueOfAlive = (int)Status.Alive;
+            Console.WriteLine(valueOfAlive);
 
         }
     }
