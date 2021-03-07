@@ -8,12 +8,30 @@ namespace GradeBook
     //    i = i + 1; 
     // }
 
-            // enum
-            enum Status 
+            // // enum
+            // enum Status 
+            // {
+            //     Alive, 
+            //     Injured,
+            //     Dead
+            // }
+
+            //struct
+            // 
+            
+            // using this keyword
+
+            struct Vector 
             {
-                Alive, 
-                Injured,
-                Dead
+                public Vector(int a, int b)
+                {
+                    this.a = a;
+                    this.b = b;
+                }
+
+                // fields
+                public int a;
+                public int b;
             }
 
 
@@ -178,25 +196,40 @@ namespace GradeBook
 
             // TYPES IN C#
 
-            Status player = Status.Alive;
+            // Status player = Status.Alive;
             
-            //enum
-            switch(player)
-            {
-                case Status.Alive:
-                    Console.WriteLine("i am alive");
-                    break;
+            // //enum
+            // switch(player)
+            // {
+            //     case Status.Alive:
+            //         Console.WriteLine("i am alive");
+            //         break;
 
-                case Status.Injured:
-                    Console.WriteLine("i am injured");
-                    break;
-                case Status.Dead:
-                    Console.WriteLine("i am dead");
-                    break;            
-            }
+            //     case Status.Injured:
+            //         Console.WriteLine("i am injured");
+            //         break;
+            //     case Status.Dead:
+            //         Console.WriteLine("i am dead");
+            //         break;            
+            // }
 
-            int valueOfAlive = (int)Status.Alive;
-            Console.WriteLine(valueOfAlive);
+            // int valueOfAlive = (int)Status.Alive;
+            // Console.WriteLine(valueOfAlive);
+
+
+            // struct
+            // Vector vector = new Vector();
+            // vector.x = 4;
+            // vector.y = 2;
+
+            // Console.WriteLine("X = {0}", vector.x);
+            // Console.WriteLine("Y = {0}", vector.y);
+
+            // using constructor in struct
+            Vector v = new Vector(2,10);
+
+            Console.WriteLine("x = {0}", v.x);
+            Console.WriteLine("y = {0}", v.y);
 
         }
     }
