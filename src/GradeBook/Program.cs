@@ -21,17 +21,65 @@ namespace GradeBook
             
             // using this keyword
 
-            struct Vector 
-            {
-                public Vector(int a, int b)
-                {
-                    this.a = a;
-                    this.b = b;
-                }
+            // struct Vector 
+            // {
+            //     public Vector(int a, int b)
+            //     {
+            //         this.a = a;
+            //         this.b = b;
+            //     }
 
-                // fields
-                public int a;
-                public int b;
+            //     // fields
+            //     public int a;
+            //     public int b;
+            // }
+
+
+
+            // class            
+            // class Person
+            // {
+            //     public string name;
+            //     public int age;
+
+            //     public void Display()
+            //     {
+            //         Console.WriteLine("My name is {0} and my Age is {1}", name,age);
+            //     }
+            // }
+
+            // class Person 
+            // {
+            //     public string name;
+            //     public int age;
+
+            //     //default constructor
+            //     public Person()
+            //     {
+            //         name = "NILL";
+            //         age = -1;
+            //     }
+            // }
+
+            // base constructor
+            class Person 
+            {
+                protected string name;
+                protected int age;
+
+                public Person(string name, int age)
+                {
+                    this.name = name;
+                    this.age = age;
+                }
+            }
+
+            class Employee : Person
+            {
+                public Employee(string n, int a) : base(n, a)
+                {
+                    Console.WriteLine("this is working");
+                }
             }
 
 
@@ -226,11 +274,21 @@ namespace GradeBook
             // Console.WriteLine("Y = {0}", vector.y);
 
             // using constructor in struct
-            Vector v = new Vector(2,10);
+            // Vector v = new Vector(2,10);
 
-            Console.WriteLine("x = {0}", v.x);
-            Console.WriteLine("y = {0}", v.y);
+            // Console.WriteLine("x = {0}", v.x);
+            // Console.WriteLine("y = {0}", v.y);
 
+
+            // // class
+            // Person p = new Person();
+            // p.name = "ehis jude";
+            // p.age = 20;
+
+            // p.Display();
+
+            Employee emp = new Employee("Hamza", 20);
+            
         }
     }
 }
