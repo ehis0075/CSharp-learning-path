@@ -82,11 +82,83 @@ namespace GradeBook
             //     }
             // }
 
+            //  // static type
+            // static class Helper 
+            // {
+            //     public static void add()
+            //     {
+            //         Console.WriteLine("adding......");
+            //     }
+            // }
+
+//             //static constructor
+//            static class Helper 
+//            {
+//                public static int age;
+
+//                static Helper()
+//                {
+//                    age = 23;
+//                }
+
+// `               public static void add()
+//                 {
+//                     Console.WriteLine("adding......");
+//                 }
+
+//            }
+
+            // extension method in static type
+            // public static class ExtensionClass
+            // {
+            //     public static bool isLessThan(this int origin, int compareValue)
+            //     {
+            //         if(origin < compareValue)
+            //             return true;
+            //         else
+            //             return false;
+            //     }
+            // }
+
 
     class Program
     {
         static void Main(string[] args)
         {
+
+            // // extension method
+            // int age = 22;
+            // bool check = age.isLessThan(30);
+            // Console.WriteLine(check);
+
+
+
+
+
+            // type conversion
+
+
+            // as operator
+            class A 
+            {
+
+            }
+
+            class B : A 
+            {
+
+            }
+
+            A a = new B();
+
+            // explicitly convert type A to B
+            B b = a as B;
+
+
+
+
+
+
 
             /** if else statement
             int age = 20;
@@ -290,10 +362,48 @@ namespace GradeBook
             //Employee emp = new Employee("Hamza", 20);
 
             //anonymous class
-            var person = new { Name = "ali", age = 22};
+            // var person = new { Name = "ali", age = 22};
 
-            Console.WriteLine("Name = {0}", person.Name);
-            Console.WriteLine("Age = {0}", person.age);
+            // Console.WriteLine("Name = {0}", person.Name);
+            // Console.WriteLine("Age = {0}", person.age);
+
+
+            // dynamic type
+           // dynamic name = "ehis";
+           // Console.WriteLine(name.GetType());
+
+
+            // // nullable type
+            // bool? isMarried = null;
+            // isMarried = true;
+
+            // // using ?? operator
+            // bool? isBig = null;
+            // bool big = isBig ?? false;
+
+            // Nullable<bool> isSmall = null;   OR bool? isSmall = null;
+
+
+            // // static type
+            // static class Helper 
+            // {
+            //     public static void add()
+            //     {
+            //         Console.WriteLine("adding......");
+            //     }
+            // }
+
+
+           // Helper.add();
+
+           
+
+
+
+
+
+
+
             
         }
     }
