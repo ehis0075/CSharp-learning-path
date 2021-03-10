@@ -121,6 +121,20 @@ namespace GradeBook
             // }
 
 
+            
+            // User defined type conversion
+
+            // // implicit user definened type conversion
+            //  class Byte
+            //  {
+            //      public int bits = 8;
+            //      public static implicit operator int(Byte b)
+            //      {
+            //          return b.bits;
+            //      }
+            //  }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -134,37 +148,42 @@ namespace GradeBook
 
 
 
-
             // type conversion
 
-
-            // as operator
-            class A 
-            {
-
-            }
-
-            class B : A 
-            {
-
-            }
-
-            A a = new B();
-
-            // explicitly convert type A to B
-            //B b = a as B;
+            // Byte b = new Byte();
+            // int totalBits = b;
+            // Console.WriteLine(totalBits);
 
 
-            // is operator
-            if(a is B)
-            {
-                B b = (B)a;
-            }
-
-            Console.WriteLine(b.GetType());
+            // explicit user defined conversion
 
 
 
+
+            // // as operator
+            // class A 
+            // {
+
+            // }
+
+            // class B : A 
+            // {
+
+            // }
+
+            // A a = new B();
+
+            // // explicitly convert type A to B
+            // //B b = a as B;
+
+
+            // // is operator
+            // if(a is B)
+            // {
+            //     B b = (B)a;
+            // }
+
+            // Console.WriteLine(b.GetType());
 
 
 
