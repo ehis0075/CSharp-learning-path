@@ -62,25 +62,25 @@ namespace GradeBook
             // }
 
             // base constructor
-            class Person 
-            {
-                protected string name;
-                protected int age;
+            // class Person 
+            // {
+            //     protected string name;
+            //     protected int age;
 
-                public Person(string name, int age)
-                {
-                    this.name = name;
-                    this.age = age;
-                }
-            }
+            //     public Person(string name, int age)
+            //     {
+            //         this.name = name;
+            //         this.age = age;
+            //     }
+            // }
 
-            class Employee : Person
-            {
-                public Employee(string n, int a) : base(n, a)
-                {
-                    Console.WriteLine("this is working");
-                }
-            }
+            // class Employee : Person
+            // {
+            //     public Employee(string n, int a) : base(n, a)
+            //     {
+            //         Console.WriteLine("this is working");
+            //     }
+            // }
 
 
     class Program
@@ -287,7 +287,13 @@ namespace GradeBook
 
             // p.Display();
 
-            Employee emp = new Employee("Hamza", 20);
+            //Employee emp = new Employee("Hamza", 20);
+
+            //anonymous class
+            var person = new { Name = "ali", age = 22};
+
+            Console.WriteLine("Name = {0}", person.Name);
+            Console.WriteLine("Age = {0}", person.age);
             
         }
     }
