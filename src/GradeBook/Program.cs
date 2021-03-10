@@ -122,7 +122,7 @@ namespace GradeBook
 
 
             
-            // User defined type conversion
+            // User defined implicit type conversion
 
             // // implicit user definened type conversion
             //  class Byte
@@ -133,6 +133,19 @@ namespace GradeBook
             //          return b.bits;
             //      }
             //  }
+
+            // User defined explicit type conversion
+            class Person 
+            {
+                public int Age { get; set; }
+                public string Name { get; set; }
+
+                public static explicit operator string (Person per)
+                {
+                    return per.Name;
+                }
+            }
+
 
 
     class Program
@@ -150,14 +163,18 @@ namespace GradeBook
 
             // type conversion
 
+              // User defined implicit type conversion
+
             // Byte b = new Byte();
             // int totalBits = b;
             // Console.WriteLine(totalBits);
 
 
-            // explicit user defined conversion
+             // User defined explicit type conversion
+             Person per = new Person { Age = 22, Name = "Ali" };
 
-
+             string name = (string)per;
+             Console.WriteLine(name);
 
 
             // // as operator
