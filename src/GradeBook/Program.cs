@@ -152,7 +152,16 @@ namespace GradeBook
             A a = new B();
 
             // explicitly convert type A to B
-            B b = a as B;
+            //B b = a as B;
+
+
+            // is operator
+            if(a is B)
+            {
+                B b = (B)a;
+            }
+
+            Console.WriteLine(b.GetType());
 
 
 
